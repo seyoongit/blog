@@ -1,0 +1,17 @@
+.Footer {
+    color: white;
+    background-color: #1E3846;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    height: 15rem;
+    text-align: center;
+    padding-top: 7rem;    
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.Footer h3 {
+    font-family: inherit;
+    font-weight: 400;
+    
+}

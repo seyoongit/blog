@@ -1,0 +1,84 @@
+.SideNav #background {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.Category {
+    margin: 50px 0px 30px;
+    padding-left: 30px;
+}
+.Category #categoryTitle {
+    font-family: 'Hanna'!important;
+    font-weight: 700;
+    font-size: 2.0em;
+}
+.Category #menuItem {
+    font-family: 'Hanna'!important;
+    font-size: 1.2em;
+    color: #777;
+    padding: 5px;
+    margin: 10px;
+}
+.AdminButton {
+  text-align: center;
+}
+
+@keyframes zoomOutLeft {
+ 40% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(.1) translate3d(-2000px, 0, 0);
+    transform-origin: left center;
+  }
+}
+.SideNav #pusher.zoomOutLeft {
+    animation: zoomOutLeft 0.5s!important;
+    animation-fill-mode: forwards!important;
+}
+@keyframes zoomInLeft {
+     from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(40px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.SideNav #pusher.zoomInLeft {
+    animation: zoomInLeft 0.5s!important;
+    animation-fill-mode: forwards!important;
+}
+
+@media only screen and (max-width: 767px) {
+    .SideNav #sideNav{
+        width: 100%;
+    }
+    .AdminButton {
+      display: none;
+    }
+}

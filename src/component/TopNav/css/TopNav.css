@@ -1,0 +1,35 @@
+.TopNav #homeButton {
+    font-family: 'Jeju Gothic', 'serif';
+    color: #2185d0;
+}
+.TopNav #homeButton span{
+    color: #f2711c;
+}
+.TopNav #adminLink {
+    cursor: default;
+}
+.TopNav.show {
+    animation: show 0.5s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+.TopNav.hide {
+    animation: hide 0.5s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+@keyframes show {
+    0% { transform: translateY(-100%) }
+    100% {  transform: translateY(0%) }
+}
+@keyframes hide {
+    0% { transform: translateY(0%) }
+    100% { transform: translateY(-100%) } 
+}
+
+/*Media Query*/
+@media only screen and (max-width: 767px) {
+    .TopNav #homeButton, .TopNav #loginLabel {
+        display: none;
+    }
+}

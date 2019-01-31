@@ -1,0 +1,44 @@
+.PostHeader {
+    background: #1E3846; 
+    color: white;
+    height: 100%;
+}
+.PostHeader a {
+    color: white;
+}
+.PostHeader #computerTablet {
+    color: white;
+    font-family: Hanna, sans-serif;
+    font-weight: 100;
+    font-size: 7em;
+    height: 100%;
+    text-align: center;
+    padding-top: 20rem;
+}
+.PostHeader #computerTablet .sub {
+    color: #aaa;
+    font-size: 0.5em;
+}
+.PostHeader #mobile {
+    color: white;
+    font-family: Hanna, sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    height: 100%;
+    text-align: center;
+    padding-top: 50%;
+}
+.PostHeader #mobile .sub {
+    font-size: 0.5em;
+}
+.DateAndTag {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%!important;
+}
+/*Touch directly semantic-ui*/
+.PostHeader .twelve.wide.column, .PostHeader .sixteen.wide.column {
+    height: 100%;
+}

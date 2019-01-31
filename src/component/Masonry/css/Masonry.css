@@ -1,0 +1,9 @@
+.Masonry .computer, .Masonry .tablet {
+    margin-top: 20px;
+}
+
+
+/*Touch directly Semantic-ui*/
+.ui.card {
+    margin-bottom: 1em!important;
+}

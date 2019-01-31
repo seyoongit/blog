@@ -1,0 +1,30 @@
+.PageDimmer {
+    overflow: scroll;
+}
+.ResultRenderer {
+    padding: 1px;
+}
+.ResultRenderer #title{
+    font-family: 'Jeju Gothic', 'serif';
+    font-size: 1.5em;
+    color: #2185d0;
+}
+.ResultRenderer #date {
+    font-family: 'Jeju Gothic', 'serif';
+    font-size: 0.6em;
+    color: #ff851b;
+}
+.ResultRenderer #hidden {
+    font-family: 'Jeju Gothic', 'serif';
+    font-size: 1.5em;
+    color: white;
+}
+
+/*Touch directly semantic-ui*/
+.result:hover {
+    background: rgba(255,133,27,1)!important;
+}
+.result {
+    margin:0!important;
+    padding:0!important;
+}

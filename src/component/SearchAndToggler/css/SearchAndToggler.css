@@ -1,0 +1,45 @@
+.SearchAndToggler{
+    background: rgba(30,56,70,0)!important;
+    margin: 50px 0 0!important;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0)!important;
+    border-bottom: none!important;
+    height: 1px!important;
+}
+.SearchAndToggler.displayNone{
+    display: none !important;
+}
+.SearchAndToggler #mobile {
+    margin-top: -40px;
+}
+.Search.leftShow {
+    animation: leftShow 0.5s;
+    animation-fill-mode: forwards;
+}
+.Search.leftHide {
+    animation: leftHide 0.5s;
+    animation-fill-mode: forwards;
+}
+.Toggler.rightShow {
+    animation: rightShow 0.5s;
+    animation-fill-mode: forwards;
+}
+.Toggler.rightHide {
+    animation: rightHide 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes leftShow {
+    0% { transform: translateX(-200%) }
+    100% {  transform: translateX(0%) }
+}
+@keyframes leftHide {
+    0% { transform: translateX(0%) }
+    100% { transform: translateX(-200%)} 
+}
+@keyframes rightShow {
+    0% { transform: translateX(200%) }
+    100% {  transform: translateX(0%) }
+}
+@keyframes rightHide {
+    0% { transform: translateX(0%) }
+    100% { transform: translateX(200%)} 
+}

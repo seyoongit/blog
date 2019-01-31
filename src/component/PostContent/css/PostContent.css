@@ -1,0 +1,14 @@
+.PostContent {
+    background: white;
+    font-family: 'Jeju Gothic', 'serif' ;
+}
+.PostContent #computer, .PostContent #tablet {
+    font-size: 1.3em;
+}
+.PostContent #computer h3 {
+  font-family: 'Jeju Gothic';
+  font-weight: bold;
+}
+.PostContent #mobile {
+    font-size: 1em;
+}
