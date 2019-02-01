@@ -26,7 +26,7 @@
 앱을 크게 나누면 그림과 같이 6개의 컴포넌트로 나뉜다. <br>
 주황색 자리에 PostContent 와 Masonry가 겹치기 때문에 5개가 아니라 6개다. 라우팅에 따라 둘중 하나가 렌더링된다.<br>
 <br>
-나뉘어진 7개의 컴포넌트는 모두 각각 리액트에서 소위 말하는 HOC(Higher Order Component) 이다. <br>
+나뉘어진 6개의 컴포넌트는 모두 각각 리액트에서 소위 말하는 HOC(Higher Order Component) 이다. <br>
 <br>
 <br>
 
