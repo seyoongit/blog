@@ -32,7 +32,7 @@
 
 ###### HOC
 
-내경우는 HOC를 아래 그림과 같이 나눴다. 초록색 P는 Presentational 컴포넌트를 의미한다. <br>
+내경우는 HOC를 아래와 같은 방식으로 나눴다. 초록색 P는 Presentational 컴포넌트를 의미한다. <br>
 <br>
 
 ![blog_hoc](https://user-images.githubusercontent.com/47002080/52105759-4e476480-2633-11e9-8f87-815880a1ba44.png)
