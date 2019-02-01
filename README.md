@@ -28,6 +28,7 @@
 <br>
 나뉘어진 7개의 컴포넌트는 모두 각각 리액트에서 소위 말하는 HOC(Higher Order Component) 이다. <br>
 <br>
+<br>
 
 ###### HOC
 
