@@ -37,7 +37,7 @@
 
 ![blog_hoc](https://user-images.githubusercontent.com/47002080/52105759-4e476480-2633-11e9-8f87-815880a1ba44.png)
 
-HOC는 오직 뷰를 보여주는것에만 집중하는 Presentational 컴포넌트의 상위에 존재하며 주로 비즈니스 로직을 담당하는 컴포넌트이다.  <br>
+HOC : 오직 뷰를 보여주는것에만 집중하는 Presentational 컴포넌트의 상위에 존재하며 주로 비즈니스 로직을 담당하는 컴포넌트이다.  <br>
 Angular에서 서비스가 가지는 역할과 비슷하다. <br>
 <br>
 각 컴포넌트 디렉토리의 index.js 가 이 HOC의 역할을 한다. 여기에 리덕스의 연결, 하위 컴포넌트에서 쓰일 리덕스 action들과 리덕스 state들을 하나로 묶어서 보내주는 코드가 들어있다. <br>
