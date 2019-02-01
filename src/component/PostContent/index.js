@@ -4,6 +4,13 @@ import PostContent from './PostContent';
 import { postFetchRequest } from '../../actions'
 
 class PostContentWrap extends Component {
+    componentDidMount() {
+        const { post, history, postFetchRequest } = this.props
+        if (post.postId === -1) { // post.postId 의 초기값은 -1
+            postFetchRequest(0);
+            history.push("0");
+        }
+    }
     render() {
         const {
             PostContentState,
@@ -11,9 +18,7 @@ class PostContentWrap extends Component {
             PrevNextState, 
             PrevNextDispatch, 
             ArticleRendererDispatch,
-            history,
         } = this.props;
-        PostContentState.history = history;
 
         return (  
             <PostContent 
@@ -26,6 +31,7 @@ class PostContentWrap extends Component {
     }
 };
 const mapStateToProps = ({ post }) => ({
+    post: post,
     PostContentState: {
         post
     },
@@ -34,21 +40,19 @@ const mapStateToProps = ({ post }) => ({
     },
 });
 const mapDispatchToProps = dispatch => ({
-    PostContentDispatch: {
-        postFetchRequest: postId => {
-            dispatch(postFetchRequest(postId))
-        },
+    postFetchRequest(postId) {
+        dispatch(postFetchRequest(postId))
     },
     PrevNextDispatch: {
-        postFetchRequest: postId => {
+        postFetchRequest(postId) {
             dispatch(postFetchRequest(postId))
         },
     },
     ArticleRendererDispatch: {
-        postFetchRequest: postId => {
+        postFetchRequest(postId) {
             dispatch(postFetchRequest(postId))
         },
-    }
+    },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostContentWrap)

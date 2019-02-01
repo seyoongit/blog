@@ -6,11 +6,6 @@ import AdminButton from './AdminButton';
 import './css/SideNav.css';
 
 class SideNav extends Component {
-    componentDidMount() {
-        const { fetchMenuList } = this.props.SideNavDispatch
-        fetchMenuList("categories")
-        fetchMenuList("recentTitles")
-    }
     render() {
         const { 
             SideNavState, 
@@ -22,8 +17,8 @@ class SideNav extends Component {
             children } = this.props;
 
         const { isSideNavOpen, menu } = SideNavState;
-        const { onClick } = SideNavDispatch
-        const { categories, recentTitles } = menu
+        const { onClick } = SideNavDispatch;
+        const { categories, recentTitles } = menu;
         
         return (
             <Sidebar.Pushable className='SideNav' >

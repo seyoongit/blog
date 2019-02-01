@@ -4,6 +4,11 @@ import SideNav from './SideNav';
 import { sideNavToggle, postFetchRequest, search, fetchMenuList, dimmerActivate, authLogoutRequest } from '../../actions/';
 
 class SideNavWrap extends Component {
+    componentDidMount() {
+        const { fetchMenuList } = this.props;
+        fetchMenuList("categories");
+        fetchMenuList("recentTitles");
+    }
     render() {
         const { 
             children,
@@ -38,35 +43,35 @@ const mapStateToProps = ({ ui, menu, auth }) => ({
     },
 });
 const mapDispatchToProps = dispatch => ({
+    fetchMenuList(menuName) {
+        dispatch(fetchMenuList(menuName))
+    },
     SideNavDispatch: {
-        fetchMenuList: menu => {
-            dispatch(fetchMenuList(menu));
-        },
-        onClick: e => {
+        onClick(e) {
             dispatch(sideNavToggle());
         }
     },
     TogglerDispatch: {
-        onClick: e => {
+        onClick(e) {
             dispatch(sideNavToggle());
         }
     },
     NavListDispatch: {
-        postFetchRequest: postId => {
+        postFetchRequest(postId) {
             dispatch(postFetchRequest(postId));
         },
-        search: (queryMode, query) => {
+        search(queryMode, query) {
             dispatch(search(queryMode, query));
         },
-        sideNavToggle: () => {
+        sideNavToggle() {
             dispatch(sideNavToggle());
         }
     },
     AdminButtonDispatch: {
-        onClick: e => {
+        onClick(e) {
             dispatch(dimmerActivate("login"));
         },
-        onClickLogout: e => {
+        onClickLogout(e) {
             dispatch(authLogoutRequest());
         },
     }

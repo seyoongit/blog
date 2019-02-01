@@ -9,18 +9,6 @@ class Masonry extends Component {
         activePage: 0
     }
     componentDidMount() {
-        // 검색결과를 보여주는 Masonry 컴포넌트는
-        // 어떤 검색결과에서 -> 다른 검색결과 로 업데이트 되지 않는다. 
-        // 설계단계부터 잘못된게 너무 많아서 지금은 손댈수가 없다.
-        const { changeQuery, search } = this.props.MasonryDispatch;
-        const { match } = this.props.MasonryState;
-        const { path, params } = match;
-        const queryMode = path.split('/')[1];
-        const queryParameter = params.query
-        if (queryMode === 'category' || queryMode === 'search') {
-            search(queryMode, queryParameter);
-            changeQuery(queryParameter);
-        }
         window.scrollTo(0, 0);
     }
     componentWillUnmount() {

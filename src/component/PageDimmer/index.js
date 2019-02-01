@@ -52,36 +52,36 @@ const mapStateToProps = ({dimmer, ui, search, auth }) => ({
 });
 const mapDispatchToProps = dispatch => ({
     PageDimmerDispatch: {
-        onClickOutside: e => {
+        onClickOutside(e) {
             dispatch(dimmerInactivate());
             dispatch(changeQuery(''));
         }
     },
     SearcherDispatch: {
-        search: (queryMode, query) => {
+        search(queryMode, query) {
             dispatch(search(queryMode, query));
         },
-        changeQuery: query => {
+        changeQuery(query) {
             dispatch(changeQuery(query))
         },
-        closeDimmer: e => {
+        closeDimmer(e) {
             dispatch(dimmerInactivate());
-            dispatch(changeQuery(''))
+            dispatch(changeQuery(''));
         },
-        postFetchRequest: postId => {
+        postFetchRequest(postId) {
             dispatch(postFetchRequest(postId))
         },
 
     },
     SubmitDispatch: {
-        onClick: e => {
+        onClick(e) {
             dispatch(dimmerInactivate());
-        }
+        },
     },
     LoginFormDispatch: {
-        authLoginRequest: ({id, password}) => {
+        authLoginRequest({id, password}) {
             dispatch(authLoginRequest({ id, password }));
-        }
+        },
     },
 });
 

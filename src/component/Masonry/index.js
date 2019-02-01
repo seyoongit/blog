@@ -4,9 +4,18 @@ import Masonry from './Masonry';
 import { search, changeQuery, searchResultsClear, postFetchRequest } from '../../actions';
 
 class MasonryWrap extends Component {
+    componentDidMount() {
+        const { match, search, changeQuery } = this.props;
+        const { path, params } = match;
+        const queryMode = path.split('/')[1];
+        const queryParameter = params.query;
+        if (queryMode === 'category' || queryMode === 'search') {
+            search(queryMode, queryParameter);
+            changeQuery(queryParameter);
+        }
+    }
     render() {
-        const { MasonryState, MasonryDispatch, ArticlePreviewDispatch, match } = this.props;
-        MasonryState.match = match;
+        const { MasonryState, MasonryDispatch, ArticlePreviewDispatch } = this.props;
 
         return (
             <Masonry 
@@ -19,18 +28,27 @@ class MasonryWrap extends Component {
 const mapStateToProps = ({ search, ui }) => ({
     MasonryState: {
         results: search.results,
-        query: search.query,
-        isLoading: ui.isLoading,
     }
 });
 const mapDispatchToProps = dispatch => ({
+    search(queryMode, query) {
+        dispatch(search(queryMode, query));
+    },
+    changeQuery(query) {
+        dispatch(changeQuery(query));
+    },
     MasonryDispatch: {
-        search      : (queryMode, query) => dispatch(search(queryMode, query)),
-        changeQuery : query => dispatch(changeQuery(query)),
-        searchResultsClear: () => dispatch(searchResultsClear()),
+        changeQuery(query) {
+            dispatch(changeQuery(query));
+        },
+        searchResultsClear() {
+            dispatch(searchResultsClear());
+        },
     },
     ArticlePreviewDispatch: {
-        postFetchRequest: postId => dispatch(postFetchRequest(postId))
+        postFetchRequest(postId) {
+            dispatch(postFetchRequest(postId));
+        },
     }
 });
 

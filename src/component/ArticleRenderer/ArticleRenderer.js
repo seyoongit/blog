@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Segment, Image, TextArea, Form } from 'semantic-ui-react';
+import { Container, Segment, Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Quote from './Quote';
 import Skill from './Skill';

@@ -6,12 +6,6 @@ import './css/PostContent.css';
 
 class PostContent extends Component {
     componentDidMount() {
-        const { post, history } = this.props.PostContentState
-        const { postFetchRequest } = this.props.PostContentDispatch
-        if (post.postId === -1) { // post.postId 의 초기값은 -1
-            postFetchRequest(0)
-            history.push("0")
-        }
         window.scrollTo(0,0);
     }
     render() {

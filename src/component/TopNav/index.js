@@ -29,17 +29,21 @@ const mapStateToProps = ({ui, auth}) => ({
 });
 const mapDispatchToProps = dispatch => ({
     TopNavDispatch: {
-        scrollUp: () => { dispatch(scrollUp()) },
-        scrollDown: () => { dispatch(scrollDown()) },
+        scrollUp() {
+            dispatch(scrollUp());
+        },
+        scrollDown() {
+            dispatch(scrollDown());
+        },
         postFetchRequest(postId) {
-            dispatch(postFetchRequest(postId))
-        }
+            dispatch(postFetchRequest(postId));
+        },
     },
     SocialMenuDispatch: {
-        dimmerMessage: message => {
+        dimmerMessage(message) {
             dispatch(dimmerActivate());
             dispatch(dimmerMessage(message));
-        }
+        },
     }
 });
 

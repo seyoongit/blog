@@ -31,13 +31,13 @@ const mapStateToProps = ({ui}) => ({
     },
 });
 const mapDispatchToProps = dispatch => ({
-    SearchDispatch:{
-        onClick: e => {
+    SearchDispatch: {
+        onClick(e) {
             dispatch(dimmerActivate("search"));
         }
     },
     TogglerDispatch: {
-        onClick: e => {
+        onClick(e) {
             dispatch(sideNavToggle());
             window.scrollTo(0,0)
         }
