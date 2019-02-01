@@ -23,8 +23,8 @@
 
 ![blog_structure](https://user-images.githubusercontent.com/47002080/52105737-366fe080-2633-11e9-933d-d03fd38246d2.png)
 
-앱을 크게 나누면 그림과 같이 7개의 컴포넌트로 나뉜다. <br>
-주황색 자리에 PostContent 와 Masonry가 겹치기 때문에 6개가 아니라 7개다. 라우팅에 따라 둘중 하나가 렌더링된다.<br>
+앱을 크게 나누면 그림과 같이 6개의 컴포넌트로 나뉜다. <br>
+주황색 자리에 PostContent 와 Masonry가 겹치기 때문에 5개가 아니라 6개다. 라우팅에 따라 둘중 하나가 렌더링된다.<br>
 <br>
 나뉘어진 7개의 컴포넌트는 모두 각각 리액트에서 소위 말하는 HOC(Higher Order Component) 이다. <br>
 <br>
@@ -32,7 +32,7 @@
 
 ###### HOC
 
-내경우는 HOC를 아래와 같은 방식으로 나눴다. 초록색 P는 Presentational 컴포넌트를 의미한다. <br>
+내 경우엔 HOC를 아래와 같은 방식으로 나눴다. 초록색 P는 Presentational 컴포넌트를 의미한다. <br>
 <br>
 
 ![blog_hoc](https://user-images.githubusercontent.com/47002080/52105759-4e476480-2633-11e9-8f87-815880a1ba44.png)
