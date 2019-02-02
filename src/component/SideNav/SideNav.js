@@ -23,7 +23,7 @@ class SideNav extends Component {
         return (
             <Sidebar.Pushable className='SideNav' >
                 <div id='background' onClick={onClick}>
-                    <Image src="https://goo.gl/S9XRcy" alt='background-picture' hidden={!isSideNavOpen}/> 
+                    <Image src="https://i.imgur.com/jeABdSa.jpg" alt='background-picture' hidden={!isSideNavOpen}/> 
                 </div>
                 <aside style={{position: "absolute", height: document.getElementById('root').offsetHeight }}>
                     <Sidebar
