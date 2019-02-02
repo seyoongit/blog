@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 
 const FooterWrap = () => {
-    const url = 'kimrangdori@naver.com'
+    const url = "http://github.com/seyoongit"
     return (
         <footer className='Footer'>
             <h3>
