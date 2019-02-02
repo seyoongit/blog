@@ -78,8 +78,6 @@ UI 컴포넌트 라이브러리
 HTTP 요청 라이브러리
 [axios](https://www.npmjs.com/package/axios)
 
-<br>
-
 ###### Firebase
 데이터베이스 및 호스팅을 제공해주는 플랫폼
 [Firebase](https://firebase.google.com/) <br>
