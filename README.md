@@ -103,6 +103,8 @@ HTTP 요청 라이브러리
 <br>
 최근 16.5버전인가에서 hook 이라는 기능이 도입된걸로 아는데 이건 나중에 정식출시되고 안정화가 되면 알아봐야겠다. 얼핏본 바로는 redux를 대체하는 기능인듯 한데, 이게 도입되면 앞으로 리액트 프로젝트의 의존성이 많이 줄어들듯 싶다.  <br>
 <br>
+여튼 이렇게 react, vue, angular 하나씩 사용해보기 계획중 하나인 react 프로젝트가 끝이 났다.
+<br>
 <br>
 
 ![](https://user-images.githubusercontent.com/47002080/52105779-6f0fba00-2633-11e9-97fe-ada9fbd0d929.gif)
