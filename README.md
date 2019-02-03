@@ -77,7 +77,7 @@ API를 통해 사이드메뉴의 카테고리 아이템을 가져오는 경우�
 <br>
 즉, 사이드바 아이템 3종류 가져오는데 이만한 코드량이 발생했다. <br>
 <br>
-현재는 category, recentTitles, tag의 명칭을 menu로 통합해서 MENU_FETCH_SUCCESS 하나밖에 없다. 그리고 action과 reducer 디렉토리에 각각 이를 처리하는 함수가 하나씩 있다. <br>
+현재는 category, recentTitles, tag의 명칭을 menu로 통합해서 MENU_FETCH_SUCCESS 하나밖에 안남았다. 그리고 action과 reducer 디렉토리에 각각 이를 처리하는 함수가 하나씩 있다. 지우면서도 신기했다. 이렇게 많은 코드가 필요없었다니 <br>
 <br>
 이것 말고도 하나 더 있는데 글을 쓰다보니 너무 길어져서 생략. <br>
 <br>
