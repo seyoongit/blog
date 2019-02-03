@@ -57,6 +57,9 @@ Angular에서 서비스가 가지는 역할과 비슷하다. <br>
 
 ###### 리팩토링?
 
+![refactoring](https://user-images.githubusercontent.com/47002080/52173664-0b6cc480-27cc-11e9-8bb6-e6dba5913e9a.jpg)
+
+
 이 앱은 사실 원래 있던 프로젝트에서 상당히 쳐내고 리팩토링을 한 결과물이다. <br>
 <br>
 API를 통해 사이드메뉴의 카테고리 아이템을 가져오는 경우를 들어보자면, <br>
