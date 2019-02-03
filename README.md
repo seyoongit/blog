@@ -64,8 +64,11 @@ Angular에서 서비스가 가지는 역할과 비슷하다. <br>
 <br>
 API를 통해 사이드메뉴의 카테고리 아이템을 가져오는 경우를 들어보자면, <br>
 <br>
-예전엔 이에 필요한 리덕스의 액션은 요청을 시작할때 CATEGORY_FETCH_START, 에러가 발생했을때 CATEGORY_FETCH_ERROR, API 요청을 통해 응답받고 데이터를 reducer에 병합하는 CATEGORY_FETCH_SUCCESS 세가지가 있었다.<br>
-그리고 action과 reducer 디렉토리에 각각 이를 처리하는 함수가 하나씩 들어있다. <br>
+예전엔 여기에 필요한 리덕스의 액션은 <br>
+1. 요청을 시작할때 CATEGORY_FETCH_START <br>
+2. 에러가 발생했을때 CATEGORY_FETCH_ERROR  <br> 
+3. API 요청을 통해 응답받고 데이터를 reducer에 병합하는 CATEGORY_FETCH_SUCCESS <br>
+이렇게 세가지가 있었다. 그리고 action과 reducer 디렉토리에 각각 이를 처리하는 함수가 하나씩 들어있다. <br>
 <br>
 그런데 사이드메뉴를 보다시피, 카테고리 말고 '최근포스트' 도 가져올 필요가 있다. 게다가 예전엔 카테고리말고 태그 항목도 있었다. <br>
 그래서 비동기 요청을 보내서 가져와야 하는 항목은 총 3개인데, 그말은 즉 필요한 action의 종류는 여기에 3곱해서 9개. 그리고 action과 reducer 디렉토리에 이를 각각 처리하는 함수가 있어야 하니 함수 6개 추가.<br>
