@@ -8,7 +8,7 @@ class PostContentWrap extends Component {
         const { post, history, postFetchRequest } = this.props
         if (post.postId === -1) { // post.postId 의 초기값은 -1
             postFetchRequest(0);
-            history.push("0");
+            history.push("/");
         }
     }
     render() {
